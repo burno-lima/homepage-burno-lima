@@ -8,4 +8,10 @@ const { frontmatter } = Astro.props;
     <p><em>{frontmatter.description}</em></p>
     <slot />
     <p>Escrito por: {frontmatter.author}</p>
+
+    <div class="tags">
+        {frontmatter.tags.map((tag) => (
+          <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+        ))}
+    </div>
 </BaseLayout>
