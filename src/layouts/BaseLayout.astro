@@ -21,7 +21,10 @@ const { pageTitle } = Astro.props;
         <Header />
         <main transition:animate={fade({ duration: '0.2s'})}>
             <slot />
-            <Footer />
         </main>
+        <Footer />
+        <script>
+        import "../scripts/menu.js";
+        </script>
 	</body>
 </html>

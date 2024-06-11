@@ -1,35 +1,40 @@
-/* Global styles */
-:root {
-  --background: #1e1e2e;
-  --background-light: #fdebf3;
-  --button: #78c2ad;
-  --text: #fdebf3;
-  --text-light: #1e1e2e;
-  --text-link: #78c2ad;
-  --underline: #375a7f;
-  --header: "Pacifico", cursive;
-  --body: "Josefin Sans", sans-serif;
-}
-
 html {
-  background-color: var(--background);
-  color: var(--text);
+  background-color: #f1f5f9;
+  font-family: sans-serif;
 }
 
 body {
-  max-width: 540px;
   margin: 0 auto;
-  text-align: justify;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
-h1,
-h2 {
-  font-family: var(--header);
-  font-weight: normal;
+* {
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 2.6rem;
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.hamburguer {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburguer .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+@media screen and (min-width: 636px) {
+  .hamburguer {
+    display: none;
+  }
 }
