@@ -4,8 +4,12 @@ import Social from "./Social.astro";
 const year = new Date().getFullYear();
 ---
 <footer>
-    <Social platform="facebook" username="bruno.gustavoluislima" />
-    <Social platform="instagram" username="burno.lima" />
-    <Social platform="linkedin" username="in/bruno-lima-4415b121a" />
-    <small>&copy; {year} <a href="https://github.com/burno-lima">Bruno Lima</a></small>
+    <div class="center">
+        <ul class="footer">
+            <li class="footer_btn"><Social platform="Facebook" username="bruno.gustavoluislima" /></li>
+            <li class="footer_btn"><Social platform="Instagram" username="burno.lima" /></li>
+            <li class="footer_btn"><Social platform="Linkedin" username="in/bruno-lima-4415b121a" /></li>
+        </ul>
+        <small>&copy; {year} <a href="https://github.com/burno-lima">Bruno Lima</a>. All Rights Reserved</small>
+    </div>
 </footer>
